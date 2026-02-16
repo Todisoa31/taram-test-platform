@@ -1,0 +1,39 @@
+{
+  "categories": [
+    {
+      "id": "cat-tech",
+      "name": "Technologie",
+      "slug": "technologie",
+      "description": "Articles liés à la tech",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "cat-business",
+      "name": "Business",
+      "slug": "business",
+      "description": "Articles business",
+      "color": "#10b981"
+    },
+    {
+      "id": "cat-marketing",
+      "name": "Marketing",
+      "slug": "marketing",
+      "description": "Stratégies marketing",
+      "color": "#f59e0b"
+    }
+  ],
+  "networks": [
+    {
+      "id": "network-public",
+      "name": "Public",
+      "description": "Réseau public"
+    },
+    {
+      "id": "network-premium",
+      "name": "Premium",
+      "description": "Réseau premium"
+    }
+  ],
+  "articles": [],
+  "notifications": []
+}
