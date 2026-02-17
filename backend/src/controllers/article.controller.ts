@@ -1,6 +1,8 @@
 import { Request, Response } from "express";
 import { ArticleService } from "../services/article.service";
 import { ArticleStatus } from "../models/article.model";
+import { createArticleSchema, updateStatusSchema } from "../utils/article.validation";
+
 
 export class ArticleController {
   static async getAll(req: Request, res: Response) {
@@ -52,10 +54,16 @@ export class ArticleController {
 
   static async create(req: Request, res: Response) {
     try {
-      const article = await ArticleService.create(req.body);
+      const validatedData = createArticleSchema.parse(req.body);
+
+      const article = await ArticleService.create(validatedData);
+
       res.status(201).json(article);
-    } catch (error) {
-      res.status(400).json({ message: "Erreur lors de la création de l'article" });
+    } catch (error: any) {
+      return res.status(400).json({
+        message: "Erreur de validation",
+        errors: error.errors
+      });
     }
   }
 
@@ -91,11 +99,10 @@ export class ArticleController {
 
   static async updateStatus(req: Request, res: Response) {
     try {
-      const { status } = req.body;
+      const { status } = updateStatusSchema.parse(req.body);
 
       const article = await ArticleService.updateStatus(
-        req.params.id as string
-,
+        req.params.id as string,
         status
       );
 
@@ -104,8 +111,11 @@ export class ArticleController {
       }
 
       res.json(article);
-    } catch (error) {
-      res.status(400).json({ message: "Erreur lors de la mise à jour du statut de l'article" });
+    } catch (error: any) {
+      return res.status(400).json({
+        message: "Erreur de validation",
+        errors: error.errors
+      });
     }
   }
 }

@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
-import { Article, ArticleStatus } from "../models/article.model.js";
-import { DatabaseService } from "./database.service.js";
+import { Article, ArticleStatus } from "../models/article.model";
+import { DatabaseService } from "./database.service";
+import { NotificationService } from "./notification.service";
 
 interface GetArticlesParams {
   status?: ArticleStatus;
@@ -122,16 +123,30 @@ export class ArticleService {
     return true;
   }
 
-  static async updateStatus(id: string, status: ArticleStatus) {
+ static async updateStatus(id: string, status: ArticleStatus) {
     const db = await DatabaseService.read();
 
     const article = db.articles.find((a: Article) => a.id === id);
     if (!article) return null;
 
+    const previousStatus = article.status;
+
     article.status = status;
-    if (status === "published") {
+
+    const isPublishing =
+      status === "published" && previousStatus !== "published";
+
+    if (isPublishing) {
       article.publishedAt = new Date();
-    } else {
+      await NotificationService.sendArticlePublished(
+        article.id,
+        article.title
+      );
+    } else if (status !== "published") {
+      article.publishedAt = null;
+    }
+
+    if (status !== "published") {
       article.publishedAt = null;
     }
 
