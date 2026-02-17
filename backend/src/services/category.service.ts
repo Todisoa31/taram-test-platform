@@ -57,7 +57,7 @@ export class CategoryService {
     );
 
     if (isUsed) {
-      throw new Error("Category is used by at least one article");
+      throw new Error("La catégorie est utilisée par au moins un article et ne peut pas être supprimée.");
     }
 
     const index = db.categories.findIndex((c: Category) => c.id === id);

@@ -2,6 +2,7 @@ import { v4 as uuidv4 } from "uuid";
 import { Article, ArticleStatus } from "../models/article.model";
 import { DatabaseService } from "./database.service";
 import { NotificationService } from "./notification.service";
+import { HttpError } from "../errors/http-error";
 
 interface GetArticlesParams {
   status?: ArticleStatus;
@@ -127,7 +128,9 @@ export class ArticleService {
     const db = await DatabaseService.read();
 
     const article = db.articles.find((a: Article) => a.id === id);
-    if (!article) return null;
+    if (!article) {
+      throw new HttpError(404, "Article non trouvé");
+    }
 
     const previousStatus = article.status;
 
@@ -146,9 +149,9 @@ export class ArticleService {
       article.publishedAt = null;
     }
 
-    if (status !== "published") {
-      article.publishedAt = null;
-    }
+    // if (status !== "published") {
+    //   article.publishedAt = null;
+    // }
 
     await DatabaseService.write(db);
 

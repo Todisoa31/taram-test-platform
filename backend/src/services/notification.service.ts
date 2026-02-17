@@ -21,6 +21,7 @@ export class NotificationService {
     db.notifications.push(notification);
 
     await DatabaseService.write(db);
+    console.log("NOTIFICATION CRÉÉE");
 
     return notification;
   }

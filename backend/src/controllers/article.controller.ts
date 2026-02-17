@@ -1,7 +1,8 @@
-import { Request, Response } from "express";
+import { NextFunction, Request, Response } from "express";
 import { ArticleService } from "../services/article.service";
 import { ArticleStatus } from "../models/article.model";
 import { createArticleSchema, updateStatusSchema } from "../utils/article.validation";
+import { NotificationService } from "../services/notification.service";
 
 
 export class ArticleController {
@@ -38,7 +39,7 @@ export class ArticleController {
     }
   }
 
-  static async getById(req: Request, res: Response) {
+  static async getById(req: Request, res: Response, next: NextFunction) {
     try {
       const article = await ArticleService.getById(req.params.id as string);
 
@@ -108,6 +109,13 @@ export class ArticleController {
 
       if (!article) {
         return res.status(404).json({ message: "Article non trouvé" });
+      }
+
+      if (status === "published") {
+        await NotificationService.sendArticlePublished(
+          article.id,
+          article.title
+        );
       }
 
       res.json(article);

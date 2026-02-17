@@ -34,6 +34,167 @@
       "description": "Réseau premium"
     }
   ],
-  "articles": [],
-  "notifications": []
+  "articles": [
+    {
+      "id": "aa013ec5-8154-40c6-9986-a6cbe8dccaf3",
+      "title": "Un article de test",
+      "content": "Voici un contenu pour testé les cinquante caractères requis par la validation Zod et l'ajout d'un article.",
+      "excerpt": "Une teste d'ajout d’article.",
+      "author": "Todisoa",
+      "categories": [
+        "cat-tech"
+      ],
+      "network": "network-public",
+      "status": "published",
+      "featured": false,
+      "publishedAt": "2026-02-17T16:10:54.983Z",
+      "createdAt": "2026-02-17T13:30:26.190Z",
+      "updatedAt": "2026-02-17T13:30:26.190Z"
+    },
+    {
+      "id": "62633152-ae66-4b83-bd97-640b06d5bbaf",
+      "title": "Retrouver le plaisir de lire 20 minutes par jour",
+      "content": "Dans un quotidien souvent chargé, prendre seulement vingt minutes pour lire peut transformer une journée. Que ce soit un roman, un essai ou quelques pages inspirantes, ce petit rituel aide à ralentir, à stimuler l’imagination et à s’offrir une vraie pause loin des écrans et du bruit.",
+      "excerpt": "Un simple rituel de lecture pour se recentrer chaque jour.",
+      "author": "Todisoa",
+      "categories": [
+        "cat-business"
+      ],
+      "network": "network-public",
+      "status": "draft",
+      "featured": false,
+      "publishedAt": null,
+      "createdAt": "2026-02-17T18:00:16.614Z",
+      "updatedAt": "2026-02-17T18:00:16.614Z"
+    },
+    {
+      "id": "4d9be76a-35dd-4f32-8908-a2265b252051",
+      "title": "Comment mieux organiser sa semaine sans se sentir débordé",
+      "content": "Une semaine bien organisée ne signifie pas remplir chaque minute de son agenda. Il s’agit plutôt de prioriser l’essentiel, de garder des moments de respiration et d’apprendre à dire non quand c’est nécessaire. Avec quelques habitudes simples, on peut retrouver un rythme plus serein.",
+      "excerpt": "Des astuces simples pour alléger sa charge mentale.",
+      "author": "Todisoa",
+      "categories": [
+        "cat-business"
+      ],
+      "network": "network-premium",
+      "status": "draft",
+      "featured": false,
+      "publishedAt": null,
+      "createdAt": "2026-02-17T18:00:53.883Z",
+      "updatedAt": "2026-02-17T18:00:53.883Z"
+    },
+    {
+      "id": "605942cd-b9d0-46fb-a3db-8a858395b4a4",
+      "title": "Créer du contenu authentique qui parle vraiment aux gens",
+      "content": "Les lecteurs recherchent avant tout de la sincérité. Partager des expériences vécues, des réussites comme des échecs, permet de créer un lien plus fort. Plutôt que de chercher la perfection, il est souvent plus efficace de privilégier l’authenticité et la régularité.",
+      "excerpt": "L’authenticité avant la perfection pour toucher son audience.",
+      "author": "Todisoa",
+      "categories": [
+        "cat-marketing"
+      ],
+      "network": "network-public",
+      "status": "draft",
+      "featured": false,
+      "publishedAt": null,
+      "createdAt": "2026-02-17T18:00:58.607Z",
+      "updatedAt": "2026-02-17T18:00:58.607Z"
+    },
+    {
+      "id": "570b6fcc-060b-4a84-aefd-1274af4ed436",
+      "title": "Développer son réseau professionnel de manière naturelle",
+      "content": "Construire un réseau solide repose avant tout sur des relations sincères. Participer à des événements, échanger autour d’intérêts communs et prendre des nouvelles régulièrement sont des gestes simples qui renforcent la confiance et ouvrent de nouvelles opportunités sur le long terme.",
+      "excerpt": "Bâtir des relations solides et durables.",
+      "author": "Todisoa",
+      "categories": [
+        "cat-business",
+        "cat-marketing"
+      ],
+      "network": "network-premium",
+      "status": "draft",
+      "featured": false,
+      "publishedAt": null,
+      "createdAt": "2026-02-17T18:01:09.663Z",
+      "updatedAt": "2026-02-17T18:01:09.663Z"
+    },
+    {
+      "id": "f55b71fe-c891-4c02-b894-e50139fd1093",
+      "title": "Trouver l’inspiration quand la motivation baisse",
+      "content": "Il arrive à tout le monde de traverser des périodes de doute ou de fatigue. Dans ces moments, changer d’environnement, discuter avec une personne inspirante ou simplement prendre du recul peut aider à retrouver de l’énergie et une nouvelle perspective.",
+      "excerpt": "Des pistes concrètes pour raviver la motivation.",
+      "author": "Todisoa",
+      "categories": [
+        "cat-marketing"
+      ],
+      "network": "network-public",
+      "status": "draft",
+      "featured": false,
+      "publishedAt": null,
+      "createdAt": "2026-02-17T18:01:19.000Z",
+      "updatedAt": "2026-02-17T18:01:19.000Z"
+    },
+    {
+      "id": "0cff6f48-42fa-4c52-9cff-2b290141d92d",
+      "title": "Les petites habitudes qui font la différence sur le long terme",
+      "content": "Ce ne sont pas toujours les grandes décisions qui transforment une carrière ou une activité, mais plutôt les petites actions répétées chaque jour. Se fixer des objectifs réalistes, célébrer les progrès et rester constant permet d’avancer durablement sans s’épuiser.",
+      "excerpt": "La force des petites actions répétées au quotidien.",
+      "author": "Todisoa",
+      "categories": [
+        "cat-business"
+      ],
+      "network": "network-premium",
+      "status": "published",
+      "featured": false,
+      "publishedAt": "2026-02-17T18:03:08.116Z",
+      "createdAt": "2026-02-17T18:01:28.310Z",
+      "updatedAt": "2026-02-17T18:01:28.310Z"
+    },
+    {
+      "id": "306d52ff-51ba-47b9-bb85-71554eb75b93",
+      "title": "Teste pour l'importé",
+      "content": "Voici un contenu pour testé les cinquante caractères requis par la validation Zod et l'ajout d'un article.",
+      "excerpt": "Résumé import",
+      "author": "Todisoa",
+      "categories": [
+        "cat-tech"
+      ],
+      "network": "network-public",
+      "featured": false,
+      "status": "published",
+      "publishedAt": "2026-02-17T18:15:26.969Z",
+      "createdAt": "2026-02-17T18:13:40.223Z",
+      "updatedAt": "2026-02-17T18:13:40.223Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "33a347ae-37c6-4173-8246-279583ce26b5",
+      "articleId": "aa013ec5-8154-40c6-9986-a6cbe8dccaf3",
+      "recipients": [
+        "toudisoua@gmail.com"
+      ],
+      "subject": "Article publié: Un article de test",
+      "sentAt": "2026-02-17T16:10:55.146Z",
+      "status": "sent"
+    },
+    {
+      "id": "6bf7f117-45bd-448b-a98d-2f728bc4f9da",
+      "articleId": "0cff6f48-42fa-4c52-9cff-2b290141d92d",
+      "recipients": [
+        "toudisoua@gmail.com"
+      ],
+      "subject": "Article publié: Les petites habitudes qui font la différence sur le long terme",
+      "sentAt": "2026-02-17T18:03:08.135Z",
+      "status": "sent"
+    },
+    {
+      "id": "b358bc4c-65c0-443d-95b6-4945227a81c4",
+      "articleId": "306d52ff-51ba-47b9-bb85-71554eb75b93",
+      "recipients": [
+        "toudisoua@gmail.com"
+      ],
+      "subject": "Article publié: Teste pour l'importé",
+      "sentAt": "2026-02-17T18:15:26.986Z",
+      "status": "sent"
+    }
+  ]
 }
