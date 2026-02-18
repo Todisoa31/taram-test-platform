@@ -14,3 +14,21 @@ export interface Article {
   createdAt: string;
   updatedAt: string;
 }
+
+export interface ArticleCreate {
+  title: string;
+  content: string;
+  excerpt: string;
+  author: string;
+  categories: string[];
+  network: string;
+}
+
+export interface ArticleImport {
+  title: string;
+  content: string;
+  excerpt?: string;
+  author: string;
+  category: string;
+  network: string;
+}

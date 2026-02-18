@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { articleService } from "../services/article.service";
 import { Article } from "../types/article";
 
-export function Dashboard() {
+export function useDashboard() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [articles, setArticles] = useState<Article[]>([]);

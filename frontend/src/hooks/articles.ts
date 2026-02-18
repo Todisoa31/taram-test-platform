@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Article } from "../types/article";
 import { articleService } from "../services/article.service";
 
-export function Articles() {
+export function useArticles() {
   const [articles, setArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

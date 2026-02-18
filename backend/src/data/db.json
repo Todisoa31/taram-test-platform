@@ -36,22 +36,6 @@
   ],
   "articles": [
     {
-      "id": "aa013ec5-8154-40c6-9986-a6cbe8dccaf3",
-      "title": "Un article de test",
-      "content": "Voici un contenu pour testé les cinquante caractères requis par la validation Zod et l'ajout d'un article.",
-      "excerpt": "Une teste d'ajout d’article.",
-      "author": "Todisoa",
-      "categories": [
-        "cat-tech"
-      ],
-      "network": "network-public",
-      "status": "published",
-      "featured": false,
-      "publishedAt": "2026-02-17T16:10:54.983Z",
-      "createdAt": "2026-02-17T13:30:26.190Z",
-      "updatedAt": "2026-02-17T13:30:26.190Z"
-    },
-    {
       "id": "62633152-ae66-4b83-bd97-640b06d5bbaf",
       "title": "Retrouver le plaisir de lire 20 minutes par jour",
       "content": "Dans un quotidien souvent chargé, prendre seulement vingt minutes pour lire peut transformer une journée. Que ce soit un roman, un essai ou quelques pages inspirantes, ce petit rituel aide à ralentir, à stimuler l’imagination et à s’offrir une vraie pause loin des écrans et du bruit.",
@@ -77,9 +61,9 @@
         "cat-business"
       ],
       "network": "network-premium",
-      "status": "draft",
+      "status": "published",
       "featured": false,
-      "publishedAt": null,
+      "publishedAt": "2026-02-18T19:07:29.899Z",
       "createdAt": "2026-02-17T18:00:53.883Z",
       "updatedAt": "2026-02-17T18:00:53.883Z"
     },
@@ -93,9 +77,9 @@
         "cat-marketing"
       ],
       "network": "network-public",
-      "status": "draft",
+      "status": "published",
       "featured": false,
-      "publishedAt": null,
+      "publishedAt": "2026-02-18T19:56:42.499Z",
       "createdAt": "2026-02-17T18:00:58.607Z",
       "updatedAt": "2026-02-17T18:00:58.607Z"
     },
@@ -110,9 +94,9 @@
         "cat-marketing"
       ],
       "network": "network-premium",
-      "status": "draft",
+      "status": "published",
       "featured": false,
-      "publishedAt": null,
+      "publishedAt": "2026-02-18T20:07:22.864Z",
       "createdAt": "2026-02-17T18:01:09.663Z",
       "updatedAt": "2026-02-17T18:01:09.663Z"
     },
@@ -163,6 +147,23 @@
       "publishedAt": "2026-02-17T18:15:26.969Z",
       "createdAt": "2026-02-17T18:13:40.223Z",
       "updatedAt": "2026-02-17T18:13:40.223Z"
+    },
+    {
+      "id": "4bc664de-d3b3-4d4b-a9ff-0c49aac455ac",
+      "title": "Teste vient de l'interface",
+      "content": "Ceci est le contenu complet de test pour vérifier que l'article peut être créé correctement depuis l'interface utilisateur. Il dépasse 50 caractères.",
+      "excerpt": "Résumé de test",
+      "author": "Elie",
+      "categories": [
+        "cat-tech",
+        "cat-business"
+      ],
+      "network": "Public",
+      "status": "published",
+      "featured": false,
+      "publishedAt": "2026-02-18T18:41:47.102Z",
+      "createdAt": "2026-02-18T18:41:31.571Z",
+      "updatedAt": "2026-02-18T18:41:31.571Z"
     }
   ],
   "notifications": [
@@ -205,6 +206,46 @@
       "subject": "Article publié: Retrouver le plaisir de lire 20 minutes par jour",
       "sentAt": "2026-02-18T11:47:31.287Z",
       "status": "sent"
+    },
+    {
+      "id": "5138f1d8-c8fb-4cf0-95c2-5bfe4e4b030b",
+      "articleId": "4bc664de-d3b3-4d4b-a9ff-0c49aac455ac",
+      "recipients": [
+        "toudisoua@gmail.com"
+      ],
+      "subject": "Article publié: Teste vient de l'interface",
+      "sentAt": "2026-02-18T18:41:47.135Z",
+      "status": "sent"
+    },
+    {
+      "id": "66c964d8-2f70-46ac-ba44-f77e1fb5210c",
+      "articleId": "4d9be76a-35dd-4f32-8908-a2265b252051",
+      "recipients": [
+        "toudisoua@gmail.com"
+      ],
+      "subject": "Article publié: Comment mieux organiser sa semaine sans se sentir débordé",
+      "sentAt": "2026-02-18T19:07:29.932Z",
+      "status": "sent"
+    },
+    {
+      "id": "d138ab7e-c1e0-4f36-9614-d2afc3575325",
+      "articleId": "605942cd-b9d0-46fb-a3db-8a858395b4a4",
+      "recipients": [
+        "toudisoua@gmail.com"
+      ],
+      "subject": "Article publié: Créer du contenu authentique qui parle vraiment aux gens",
+      "sentAt": "2026-02-18T19:57:05.918Z",
+      "status": "failed"
+    },
+    {
+      "id": "002f37a5-1a44-4e36-b12a-360258293f78",
+      "articleId": "570b6fcc-060b-4a84-aefd-1274af4ed436",
+      "recipients": [
+        "toudisoua@gmail.com"
+      ],
+      "subject": "Article publié: Développer son réseau professionnel de manière naturelle",
+      "sentAt": "2026-02-18T20:07:46.097Z",
+      "status": "failed"
     }
   ]
 }

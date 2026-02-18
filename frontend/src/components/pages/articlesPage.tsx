@@ -1,10 +1,10 @@
 "use client";
 
-import { Articles } from "@/src/hooks/articles";
-import ArticleTable from "./ArticleTable";
+import { useArticles } from "@/src/hooks/articles";
+import ArticleTable from "../articles/articleTable";
 
 export default function ArticlesPage() {
-  const { articles, loading, error, refetch } = Articles();
+  const { articles, loading, error, refetch } = useArticles();
 
   if (loading) return <p>Chargement...</p>;
   if (error) return <p>{error}</p>;
